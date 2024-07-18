@@ -740,6 +740,11 @@ p {
     }
 
     .container {
-        min-height: 170vw;
+               min-height: 170vw;
+        transition: min-height 0.5s linear;
+        -webkit-transition: min-height 0.5s linear;
+        -moz-transition: min-height 0.5s linear;
+        -ms-transition: min-height 0.5s linear;
+        -o-transition: min-height 0.5s linear;
     }
 }
