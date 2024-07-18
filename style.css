@@ -17,6 +17,10 @@ nav {
     z-index: 1;
 }
 
+nav h1 {
+    font-size: 2vw;
+}
+
 #but {
     display: flex;
 }
@@ -24,7 +28,7 @@ nav {
 #img10 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
 }
 
@@ -65,6 +69,10 @@ nav img {
     width: 100%;
 }
 
+.ri-menu-line {
+    display: none;
+}
+
 #but a:hover {
     background-color: red;
     color: white;
@@ -82,7 +90,7 @@ nav img {
 
 .container {
     /* margin-top: 1vh; */
-    min-height: 100vh;
+    min-height: 60vw;
     background-color: rgb(236, 230, 230);
     display: flex;
     align-items: center;
@@ -94,7 +102,7 @@ nav img {
 }
 
 .imgsec {
-    height: 80vh;
+    height: 50vw;
     width: 90%;
     display: flex;
     /* justify-content: center; */
@@ -128,7 +136,7 @@ footer {
     font-family: "Arsenal SC", sans-serif;
     font-weight: 700;
     font-style: italic;
-    text-shadow: 0.7vh 0.4vh rgb(66 24 25);
+    text-shadow: 0.5vw 0.2vw rgb(66 24 25);
 
 }
 
@@ -146,11 +154,13 @@ footer {
 
 .about {
     background-color: rgb(255, 255, 255);
-    min-height: 100vh;
+    height: 61vw;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 5vh;
+    /* padding-top: 5vh; */
+    border-bottom: 2vw double red;
+
 }
 
 .about1 {
@@ -177,7 +187,7 @@ footer {
     font-size: 4vw;
     font-weight: 900;
     color: red;
-    margin-top: -6vh;
+    margin-top: -4vw;
 }
 
 .about2 h1 {
@@ -204,11 +214,12 @@ footer {
 /*! what do we do */
 
 .what {
-    padding: 42vh 0 4vh 0;
+    /* padding: 42vh 0 4vh 0; */
+    padding: 1vw 0 2vw 0;
     background-color: white;
     text-align: center;
     font-size: 2vw;
-    margin-top: -14vh;
+    /* margin-top: -14vh; */
 }
 
 .what h2 {
@@ -466,7 +477,7 @@ p {
 }
 
 .footer-distributed h3 span {
-    color: #5383d3;
+    color: red;
 }
 
 
@@ -565,7 +576,7 @@ p {
     background-color: #33383b;
     border-radius: 2px;
 
-    font-size: 3.4vh;
+    font-size: 3.4vw;
     color: #ffffff;
     text-align: center;
     line-height: 35px;
@@ -618,14 +629,18 @@ p {
 @media only screen and (max-width: 500px) {
     .about {
         flex-direction: column;
+        justify-content: center;
+        height: 155vw;
+        padding-bottom: 2vw;
+        border-bottom: 2vw double red;
     }
 
     .about2 h2 {
         font-weight: bolder;
-        font-size: 9vw;
+        font-size: 8vw;
         font-weight: 900;
         color: red;
-        margin-top: -5vh;
+        margin-top: -7vw;
     }
 
     .about2 h4 {
@@ -637,7 +652,7 @@ p {
 
     .about2 h6 {
         font-weight: bolder;
-        font-size: 3vw;
+        font-size: 4vw;
         /* color: red; */
         margin-top: 1vh;
     }
@@ -652,5 +667,79 @@ p {
     .about1 {
         width: 100%;
         height: 46vh;
+    }
+
+    .about2 {
+        box-sizing: border-box;
+        /* background-color: red; */
+        width: 100%;
+        height: 48vh;
+        padding: 5% 5% 0% 5%;
+    }
+
+    nav {
+        height: 58vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    #but {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+    }
+
+    nav h1 {
+        font-size: 4vw;
+    }
+
+    #img10 {
+        flex-direction: column;
+    }
+
+    #img10 img {
+        height: 18vw;
+        width: 17vw;
+    }
+
+    #but a {
+        height: 8vw;
+        width: 26vw;
+        list-style-type: none;
+        font-size: 5.5vw;
+        align-self: center;
+        font-family: "Teko", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        background-color: #c55757;
+        border: none;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        border-radius: 10vh;
+        -webkit-border-radius: 10vh;
+        -moz-border-radius: 10vh;
+        -ms-border-radius: 10vh;
+        -o-border-radius: 10vh;
+    }
+
+    .ri-menu-line {
+        right: 2vw;
+        position: fixed;
+        font-size: 6vw;
+        background: red;
+        top: 2vw;
+        border: 0.8vw saddlebrown;
+        border-style: ridge;
+        z-index: 10;
+        display: block;
+    }
+
+    .container {
+        min-height: 170vw;
     }
 }
